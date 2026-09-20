@@ -43,6 +43,16 @@ body {
    text-decoration: none;
    color: white;
    font-size: 1.35rem;
+   background-image: linear-gradient(#ffffff, #ffffff);
+   background-repeat: no-repeat;
+   background-position: bottom right; /* Initial underline position */
+   background-size: 0 1px; /* Underline size (width, height) */
+   transition: background-size 0.3s;
+}
+
+.header_list a:hover {
+   background-position: bottom left; /* Underline position on hover */
+   background-size: 100% 1px; /* Make the underline 100% wide */
 }
 
 .header-socials {
