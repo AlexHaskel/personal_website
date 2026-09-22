@@ -9,13 +9,13 @@
 <body>
    <header class="header">
       <div class="container">
-         <h1 class="name">Alex Haskel</h1>
+         <div id="name-div"><h1 class="name">Alex Haskel</h1></div>
          <nav class="header_list">   
             <a href="#about">About</a>
             <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
+            <!-- <a href="#projects">Projects</a> -->
             <!-- <a href="#">Blog</a> -->
-            <a href="assets/Alex_Haskel_Resume.pdf" target="_blank" rel="noopener">CV</a>
+            <a href="assets/AlexHaskelResume.pdf" target="_blank" rel="noopener">CV</a>
          </nav>
          <div class="header-socials">
             <a href="mailto:alexdhaskel@gmail.com" class="email-header" aria-label="Email me">
@@ -30,7 +30,7 @@
          </div>
       </div>
    </header>
-   <div class="content">
+   <div id="about-container">
       <section id="about">
          <p>Hello! I am a senior at Hunter College double majoring
             in computer science and math. 
@@ -41,10 +41,12 @@
             classical drawing, sculpture, and painting.
          </p>
       </section>
+   </div>
+   <div class="content">
       <section id="research">
          <h2>Research</h2>
             <article>
-               <h3>Summer 2026: MIT — Fiete Lab</h3>
+               <h3>&bull; Summer 2026: Fiete Lab at MIT</h3>
                <img src="./imgs/MIT/BCS-LOGO2.jpg" id="BCS-logo">
                   <p> I investigated modular neural networks at the 
                      <a href="https://fietelab.mit.edu/" target="_blank" rel="noopener">
@@ -54,7 +56,7 @@
                      Summer Research Program in Biology and Neuroscience 
                      (<a href="https://biology.mit.edu/program-details-bsg-msrp-bio/" target="_blank" rel="noopener">MSRP-Bio</a>).
                   </p>
-                  <p> Building on previous work, I researched which kinds of training data are 
+                  <p> Building on Daoyuan's work, I researched which kinds of training data are 
                      effective at inducing modularity in regularized neural networks. 
                      I used Python to generate data with varying levels of randomness and different statistical 
                      properties and to analyze the internal structure and connectivity of networks I trained
@@ -74,35 +76,38 @@
                         <a href="./assets/MIT-Presentation-pdf.pdf" target="_blank" rel="noopener">
                            Presentation
                         </a>
-                        <a href="" target="_blank" rel="noopener">
+                        <a href="https://github.com/AlexHaskel/neural-network-modularity" target="_blank" rel="noopener">
                            Code
                         </a>
-                        <span>Daoyuan's Paper:
-                        <a href="https://journals.aps.org/prxlife/pdf/10.1103/8bps-t2vq" target="_blank" rel="noopener" id="daoyuan-paper">
-                           <i>D. Qian, Q. Liang, I. Fiete. 
+                        <div id="daoyuan">
+                        <a href="https://journals.aps.org/prxlife/abstract/10.1103/8bps-t2vq" target="_blank" rel="noopener" id="daoyuan-paper">
+                           <!-- <i>D. Qian, Q. Liang, I. Fiete. 
                            "Modular Connectivity in Neural Networks Emerges from 
                            Poisson Noise-Motivated Regularization and Promotes Robustness 
                            and Compositional Generalization," in PRX Life, vol. 4, 
-                           pp. 033022, 2026.</i>
+                           pp. 033022, 2026.</i> -->
+                           Original Paper (Qian et al.)
                         </a>
-                        </span>
+                     </div>
                      </div>
             </article>
 
             <article>
-               <h3>Summer 2025: Iowa State University</h3>
+               <h3>&bull; Summer 2025: SIMCODES at Iowa State University</h3>
                <img src="./imgs/Iowa/simcodes-logo-transp.png" class="SIMCODES-logo">
                <p> I worked on machine learning approaches in computational chemistry 
                   as part of the 
                   <a href="https://simcodes-isu.github.io/" target="_blank" rel="noopener">
-                     SIMCODES NSF REU
+                     Sustainability Institute for Machine learning and Collaborative 
+                     Open-source Development of Enzymatic Simulations
+                     (SIMCODES) NSF REU
                   </a> 
                   with Mengdi Huai and Peng Xu, under the supervision of principal 
                   investigators Ryan Richard and Theresa Windus. 
                </p>
                <p> We used machine learning to try to improve equations used in the 
                   <a href="https://en.wikipedia.org/wiki/Effective_fragment_potential_method" target="_blank" rel="noopener">
-                     Effective Fragment Potential method
+                     effective fragment potential (EFP) method
                   </a> 
                   in computational quantum chemistry
                   for calculating interaction energies between molecules. In particular, we were interested
@@ -128,11 +133,11 @@
                </p>
             </article>  
       </section> 
-      <section id="projects">
+      <!-- <section id="projects">
          <h2>Projects</h2>
          <p>I am currently working on some personal projects, which will be
             posted here soon.</p>
-      </section> 
+      </section>  -->
    </div>
    <!-- <footer class="footer">
       <a href="mailto:alexdhaskel@gmail.com" class="email-link">
